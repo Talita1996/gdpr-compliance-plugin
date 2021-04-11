@@ -120,6 +120,7 @@ if ( ! class_exists( 'TM_Gdpr_Compliance_Admin', false ) ) :
 			require_once plugin_dir_path( __FILE__ ) . '../includes/class-tm-enable-compliance-message.php';
 			require_once plugin_dir_path( __FILE__ ) . '../includes/class-tm-compliance-message-position.php';
 			require_once plugin_dir_path( __FILE__ ) . '../includes/class-tm-color-theme.php';
+			require_once plugin_dir_path( __FILE__ ) . '../includes/class-tm-compliance-message-text.php';
 
 		}
 

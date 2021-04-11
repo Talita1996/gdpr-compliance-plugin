@@ -59,13 +59,13 @@ if ( ! class_exists( 'TM_Gdpr_Compliance_Activator', false ) ) :
 				add_option( 'tm_color_theme_option', $options );
 			}
 
-			if( !get_option( 'tm_gdpr_compliance_message' ) ) {
+			if( !get_option( 'tm_compliance_message_text_option' ) ) {
 				
 				$options = array(
-					'tm-message'	=> 'ocean',
+					'tm-message-text'	=> 'We use cookies to provide our services and for analytics and marketing. To find out more about our use of cookies, please see our Privacy Policy. By continuing to browse our website, you agree to our use of cookies. ',
 				);
 			
-				add_option( 'tm_gdpr_compliance_message', $options );
+				add_option( 'tm_compliance_message_text_option', $options );
 			}
 			
 		}

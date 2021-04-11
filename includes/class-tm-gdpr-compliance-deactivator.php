@@ -32,7 +32,7 @@ if ( ! class_exists( 'TM_Gdpr_Compliance_Deactivator', false ) ) :
 		 */
 		public static function deactivate() {
 
-			$setting_options = array( 'tm_option_enable_compliance_message', 'tm_option_compliance_message_position' );
+			$setting_options = array( 'tm_option_enable_compliance_message', 'tm_option_compliance_message_position', 'tm_color_theme_option', 'tm_compliance_message_text_option' );
  
 			foreach ( $setting_options as $setting_name ) {
 
