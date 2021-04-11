@@ -67,6 +67,15 @@ if ( ! class_exists( 'TM_Gdpr_Compliance_Activator', false ) ) :
 			
 				add_option( 'tm_compliance_message_text_option', $options );
 			}
+
+			if( !get_option( 'tm_compliance_button_option' ) ) {
+				
+				$options = array(
+					'tm-button-text'	=> 'Aceito',
+				);
+			
+				add_option( 'tm_compliance_button_option', $options );
+			}
 			
 		}
 
