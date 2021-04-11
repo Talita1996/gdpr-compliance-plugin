@@ -1,0 +1,24 @@
+.tm-container {
+    position: fixed;
+    z-index: 999;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    border-style: solid;
+}
+
+.tm-compliance-button {
+    min-width: 150px;
+    font-size: 12px;
+    line-height: 13px;
+    height: 50px;
+    padding: 10px;
+}
+
+.tm-compliance-message {
+    text-align: center;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 10px;
+    margin: 0;
+}

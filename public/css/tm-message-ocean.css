@@ -1,0 +1,13 @@
+.tm-container {
+    background-color: #3185fc;
+    border-color: #403f4c;
+}
+
+.tm-compliance-message {
+    color: #0b4f6c;
+}
+
+.tm-compliance-button {
+    background-color: #403f4c;
+    color: #ffffff;
+}

@@ -7,7 +7,7 @@
  * @since      1.0.0
  *
  * @package    GDPRCompliance
- * @subpackage includes
+ * @subpackage public
  */
 
 if ( ! class_exists( 'TM_Gdpr_Compliance_Public', false ) ) :
@@ -19,7 +19,7 @@ if ( ! class_exists( 'TM_Gdpr_Compliance_Public', false ) ) :
 	 * enqueue the public-facing stylesheet and JavaScript.
 	 *
 	 * @package    GDPRCompliance
-	 * @subpackage includes
+	 * @subpackage public
 	 * @author     Talita Mota <talita_mota@outlook.com>
 	 */
 	
@@ -76,7 +76,7 @@ if ( ! class_exists( 'TM_Gdpr_Compliance_Public', false ) ) :
 			 * class.
 			 */
 
-			wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/plugin-name-public.css', array(), $this->version, 'all' );
+			wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/tm-gdpr-compliance-public.css', array(), $this->version, 'all' );
 
 		}
 
@@ -100,6 +100,26 @@ if ( ! class_exists( 'TM_Gdpr_Compliance_Public', false ) ) :
 			 */
 
 			wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/plugin-name-public.js', array( 'jquery' ), $this->version, false );
+
+		}
+
+		/**
+		 * Starts GDPR Compliance message on public page
+		 *
+		 * @since    1.0.0
+		 */
+		public function public_page() {
+
+			if ( !is_admin() ) { 
+
+				require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/partials/tm-gdpr-compliance-public-display.php';
+
+				$options = get_option( 'tm_color_theme_option' );
+				wp_enqueue_style( 'tm-message-style', plugin_dir_url( __FILE__ ) . 'css/tm-message-' . $options['tm-color-theme'] . '.css', array(), $this->version, 'all' );
+
+				$options = get_option( 'tm_option_compliance_message_position' );
+				wp_enqueue_style( 'tm-message-position', plugin_dir_url( __FILE__ ) . 'css/tm-message-position-' . $options['tm-message-position'] . '.css', array(), $this->version, 'all' );
+			}
 
 		}
 

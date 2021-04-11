@@ -84,7 +84,6 @@ if ( ! class_exists( 'TM_Color_Theme', false ) ) :
         function tm_color_theme_option() {
 
             $options = get_option( 'tm_color_theme_option' );
-
             ?>
                 <ul>
                     <li>
