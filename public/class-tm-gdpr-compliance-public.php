@@ -110,7 +110,9 @@ if ( ! class_exists( 'TM_Gdpr_Compliance_Public', false ) ) :
 		 */
 		public function public_page() {
 
-			if ( !is_admin() ) { 
+			$options = get_option( 'tm_option_enable_compliance_message' );
+
+			if ( !is_admin() && $options['tm-message'] == 'enable' ) { 
 
 				require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/partials/tm-gdpr-compliance-public-display.php';
 

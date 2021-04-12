@@ -1,5 +1,25 @@
 (function( $ ) {
-	'use strict';
+	$(document).ready(function() {
+		/*if(localStorage.getItem('popState') != 'shown'){
+			$('.tm-container').delay(2000).fadeIn();
+			localStorage.setItem('popState','shown')
+		}*/
+		
+		if(localStorage.getItem('popState') != 'hide'){
+			$('.tm-container').css( 'opacity', '1' );
+		}
+	
+		if(localStorage.getItem('popState') == 'hide'){
+			//localStorage.setItem('popState','shown')
+			$('.tm-container').remove();
+		}
+
+		$('.tm-compliance-button').click(function() // You are clicking the close button
+		{
+			$('.tm-container').fadeOut();
+			localStorage.setItem('popState','hide')
+		});
+	});
 
 	/**
 	 * All of the code for your public-facing JavaScript source

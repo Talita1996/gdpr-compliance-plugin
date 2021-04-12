@@ -11,13 +11,16 @@
  * @package    Plugin_Name
  * @subpackage Plugin_Name/public/partials
  */
+
+    $compliance_message =  get_option( 'tm_compliance_message_text_option' );
+    $button_agree = get_option( 'tm_compliance_button_option' );
 ?>
 
 <div class="tm-container">
     <p class="tm-compliance-message">
-        We use cookies to provide our services and for analytics and marketing. To find out more about our use of cookies, please see our and. By continuing to browse our website, you agree to our use of cookies.
+        <?php echo $compliance_message['tm-message-text']; ?>
     </p>
     <button class="tm-compliance-button">
-            I understand
+        <?php echo $button_agree['tm-button-text']; ?>
     </button>
 </div>
