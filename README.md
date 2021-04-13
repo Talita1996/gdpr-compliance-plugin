@@ -6,7 +6,6 @@ A Wordpress plugin to edit some options for a GDPR Compliance message.
 
 * This plugin structure is based on the [WordPress Plugin Boilerplate](https://github.com/DevinVinson/WordPress-Plugin-Boilerplate).
 * In GDPR menu option you can enable, set colors theme, change message and position of a GDPR Compliance Message on site frontend
-* **IMPORTANT!** Options selected doesn't change plugins permissions. In others words, if a menu option doesn't have permission to show for a selected user, so it will not show.
 
 ## Installation
 
