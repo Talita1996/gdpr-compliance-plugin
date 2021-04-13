@@ -1,15 +1,13 @@
 <?php
 
 /**
- * Provide a public-facing view for the plugin
+ * Provide the compliance message on public-facing view
  *
- * This file is used to markup the public-facing aspects of the plugin.
- *
- * @link       http://example.com
+ * @link       https://github.com/Talita1996/gdpr-compliance-plugin
  * @since      1.0.0
  *
- * @package    Plugin_Name
- * @subpackage Plugin_Name/public/partials
+ * @package    GDPRCompliance
+ * @subpackage public
  */
 
     $compliance_message =  get_option( 'tm_compliance_message_text_option' );

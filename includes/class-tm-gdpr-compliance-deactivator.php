@@ -28,6 +28,8 @@ if ( ! class_exists( 'TM_Gdpr_Compliance_Deactivator', false ) ) :
 		/**
 		 * Deactivate the GDPR Compliance plugin 
 		 *
+		 * Remove all options registered by plugin
+		 * 
 		 * @since    1.0.0
 		 */
 		public static function deactivate() {

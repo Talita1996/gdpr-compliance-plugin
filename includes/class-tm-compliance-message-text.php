@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Option that enables / disables the compliance message.
+ * Option that set the compliance message text.
  *
  * @link       https://github.com/Talita1996/gdpr-compliance-plugin
  * @since      1.0.0
@@ -13,9 +13,9 @@
 if ( ! class_exists( 'TM_Compliance_Message_Text', false ) ) :
 
     /**
-     * Option that enables / disables the compliance message.
+     * Option that set the compliance message text.
      *
-     * Adds settings of enabale/disable message to the compliance plugin admin page.
+     * Adds settings to the compliance plugin admin page for change the default message.
      *
      * @package    GDPRCompliance
      * @subpackage includes
@@ -37,18 +37,11 @@ if ( ! class_exists( 'TM_Compliance_Message_Text', false ) ) :
 		}
 
         /**
-		 * Set compliance message option.
+		 * Set compliance message text option.
 		 *
 		 * @since    1.0.0
 		 */
         function tm_gdpr_settings_init() {
-	/*
-			add_settings_section(
-				'tm_section_enable_compliance_message',
-				__( 'Compliance Message', 'tm-gdpr-compliance' ),
-                array( $this, 'tm_section_enable_compliance_message' ),
-				'tm_gdpr_compliance'
-			);*/
 	
 			add_settings_field(
 				'tm_gdpr_compliance_message_text',
@@ -61,23 +54,7 @@ if ( ! class_exists( 'TM_Compliance_Message_Text', false ) ) :
         }
 
         /**
-		 * Set compliance message section content.
-		 *
-		 * @since    1.0.0
-		 */
-        /*
-        function tm_section_enable_compliance_message( $args ) {
-
-            ?>
-                <p id="<?php echo esc_attr( $args['id'] ); ?>">
-                    <?php esc_html_e( 'In this section it\'s possible to enable and disable the GDPR compliance message.', 'tm-gdpr-compliance' ); ?>
-                </p>
-            <?php
-    
-        }*/
-
-        /**
-		 * Set compliance message option content.
+		 * Set compliance message text editor.
 		 *
 		 * @since    1.0.0
 		 */

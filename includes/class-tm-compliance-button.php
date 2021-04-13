@@ -42,13 +42,6 @@ if ( ! class_exists( 'TM_Compliance_Button', false ) ) :
 		 * @since    1.0.0
 		 */
         function tm_gdpr_settings_init() {
-	/*
-			add_settings_section(
-				'tm_section_enable_compliance_message',
-				__( 'Compliance Message', 'tm-gdpr-compliance' ),
-                array( $this, 'tm_section_enable_compliance_message' ),
-				'tm_gdpr_compliance'
-			);*/
 	
 			add_settings_field(
 				'tm_gdpr_button_text',
@@ -59,22 +52,6 @@ if ( ! class_exists( 'TM_Compliance_Button', false ) ) :
 			);
 
         }
-
-        /**
-		 * Set compliance message section content.
-		 *
-		 * @since    1.0.0
-		 */
-        /*
-        function tm_section_enable_compliance_message( $args ) {
-
-            ?>
-                <p id="<?php echo esc_attr( $args['id'] ); ?>">
-                    <?php esc_html_e( 'In this section it\'s possible to enable and disable the GDPR compliance message.', 'tm-gdpr-compliance' ); ?>
-                </p>
-            <?php
-    
-        }*/
 
         /**
 		 * Set agree button text.

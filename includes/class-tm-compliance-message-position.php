@@ -13,9 +13,9 @@
 if ( ! class_exists( 'TM_Compliance_Message_Position', false ) ) :
 
     /**
-    * Option to position the message on the website.
+    * Option to position the message on the public-facilng side.
      *
-     * Adds options to config where the compliance message will shown on website.
+     * Adds options to config where the compliance message will shown on the public-facilng side.
      *
      * @package    GDPRCompliance
      * @subpackage includes
@@ -37,7 +37,7 @@ if ( ! class_exists( 'TM_Compliance_Message_Position', false ) ) :
 		}
 
         /**
-		 * Set compliance message option.
+		 * Set position option.
 		 *
 		 * @since    1.0.0
 		 */
@@ -76,7 +76,7 @@ if ( ! class_exists( 'TM_Compliance_Message_Position', false ) ) :
         }
 
         /**
-		 * Set compliance message option content.
+		 * Set compliance message position option content.
 		 *
 		 * @since    1.0.0
 		 */

@@ -43,13 +43,6 @@ if ( ! class_exists( 'TM_Color_Theme', false ) ) :
 		 */
         function tm_gdpr_settings_init() {
 	
-			/*add_settings_section(
-				'tm_color_theme_section',
-				__( 'Color Theme', 'tm-gdpr-compliance' ),
-                array( $this, 'tm_color_theme_section' ),
-				'tm_gdpr_compliance'
-			);*/
-	
 			add_settings_field(
 				'tm_gdpr_compliance_color',
 				__( 'Select the theme color:', 'tm-gdpr-compliance' ),
@@ -59,22 +52,6 @@ if ( ! class_exists( 'TM_Color_Theme', false ) ) :
 			);
 
         }
-
-        /**
-		 * Set compliance message section content.
-		 *
-		 * @since    1.0.0
-		 */
-        /*
-        function tm_color_theme_section( $args ) {
-
-            ?>
-                <p id="<?php echo esc_attr( $args['id'] ); ?>">
-                    <?php esc_html_e( 'In this section it\'s possible to select the theme color that is used in GDPR compliace message.', 'tm-gdpr-compliance' ); ?>
-                </p>
-            <?php
-    
-        }*/
 
         /**
 		 * Set compliance message option content.
